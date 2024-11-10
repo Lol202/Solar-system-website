@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Солнечная система</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .intro {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0px;
+        }
+
+        img.planet {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+            margin-bottom: 20px;
+        }
+
+        .text-block {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            max-width: 800px;
+        }
+
+        .button {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #0066cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+            .button:hover {
+                background-color: #004d99;
+                transform: scale(1.05);
+            }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            color: #666;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Солнечная система</h1>
+    </header>
+
+    <div class="intro">
+        <p>
+            Добро пожаловать в мир Солнечной системы! Наш дом — не просто одна планета, но целая система удивительных миров, каждый из которых уникален и хранит множество тайн.
+        </p>
+    </div>
+
+    <div class="content">
+        <img src="C:\Users\Sashk\Downloads\solar-system.webp" alt="Солнечная система" class="planet" />
+
+        <div class="text-block">
+            <p>
+                Исследование Солнечной системы позволяет нам лучше понять наше место во Вселенной. Изучая планеты, спутники и малые тела, мы расширяем наши знания о происхождении и эволюции космоса. Каждый объект, от Солнца до крошечных комет, несет в себе следы процессов, которые формировали космос миллиарды лет назад.
+            </p>
+            <p>
+                Погружение в тайны Солнечной системы вдохновляет нас на открытие новых горизонтов и задает вопросы, на которые мы еще не знаем ответов. Возможно, однажды мы сможем обнаружить жизнь за пределами Земли или найти ресурсы, которые помогут человечеству в будущем. Важность изучения Солнечной системы заключается не только в понимании окружающего мира, но и в стремлении к достижению новых высот.
+            </p>
+        </div>
+
+        <button class="button" onclick="window.location.href='details.html'">
+            Узнать больше
+        </button>
+    </div>
+
+    <footer>
+        <p>Исследуйте космос вместе с нами!</p>
+    </footer>
+</body>
+</html>
