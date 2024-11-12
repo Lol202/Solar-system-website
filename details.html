@@ -1,72 +1,125 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Подробности о Солнечной системе</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подробно о отдыхе в Турции</title>
     <style>
         body {
-            font-family: 'Verdana', sans-serif;
-            background-color: #fafafa;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            font-family: Arial, sans-serif;
+            padding: 2cm; /* Отступы от краёв */
+            background-color: #f5f5f5; /* Цвет фона для всего тела */
         }
 
         h1 {
             color: #333;
-            font-size: 28px;
-            margin-bottom: 20px;
-            text-align: center;
+            margin: 20px 0; /* Отступы для заголовка */
         }
 
-        .info {
-            max-width: 800px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        h2 {
+            margin: 40px 0 20px; /* Увеличенные отступы для заголовка и отступ снизу */
+            text-align: center; /* Выравнивание заголовка по центру */
         }
 
         p {
             font-size: 18px;
-            line-height: 1.8;
-            color: #333333;
+            line-height: 1.6;
+            margin: 10px 0; /* Отступы для параграфов */
         }
 
-        .button {
-            padding: 12px 24px;
-            font-size: 18px;
-            background-color: #ff6600;
-            color: #fff;
-            border: none;
+        table {
+            width: 100%; /* Таблица занимает всю ширину */
+            border-collapse: collapse;
+            margin: 20px 0; /* Отступ сверху и снизу */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-            margin-top: 20px;
-            text-align: center;
+            overflow: hidden;
         }
 
-            .button:hover {
-                background-color: #cc5200;
-                transform: scale(1.05);
-            }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px; /* Увеличенные отступы ячеек для лучшей читаемости */
+            text-align: left;
+        }
+
+        th {
+            background-color: #6196f8;
+            color: white; /* Цвет текста заголовка таблицы */
+        }
+
+        .btn-container {
+            margin-top: 20px;
+            text-align: center; /* Выравнивание кнопки по центру */
+        }
     </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Подробности о Солнечной системе</h1>
-    <div class="info">
-        <p>
-            На этой странице вы найдете подробную информацию о планетах, спутниках и малых телах Солнечной системы, их особенностях и уникальных характеристиках. Каждая планета — это отдельный мир с уникальными природными процессами и климатом, от жаркой Венеры до ледяных земель Урана и Нептуна.
-        </p>
-        <p>
-            Узнайте, какие планеты могут содержать воду, какие атмосферы могут поддерживать жизнь, и какие процессы образуют кратеры на спутниках планет. Эти знания помогут вам лучше понять, как устроен наш мир.
-        </p>
-        <button class="button" onclick="window.location.href='https://solarsystem.nasa.gov/'">
-            Узнать больше на сайте NASA
-        </button>
+
+    <h1>Подробно о отдыхе в Турции</h1>
+    <p>Турция предлагает уникальное сочетание красивых пляжей, исторических достопримечательностей и богатой культуры. Здесь вы можете посетить древний город Эфес, насладиться солнцем на пляжах Анталии и попробовать восхитительные блюда, такие как кебабы и баклава. Каждый найдет здесь что-то для себя — от активного отдыха до гастрономических удовольствий.</p>
+
+    <h2>Рейсы в Турцию</h2>
+    <p>Ниже представлены актуальные рейсы в Турцию, которые помогут вам спланировать ваше путешествие.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Рейс</th>
+                <th>Цена</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Сочи - Анталья</td>
+                <td><strong>от 5 444₽</strong></td>
+            </tr>
+            <tr>
+                <td>Сочи - Стамбул</td>
+                <td><strong>от 384₽</strong></td>
+            </tr>
+            <tr>
+                <td>Нижний Новгород - Стамбул</td>
+                <td><strong>от 8 457₽</strong></td>
+            </tr>
+            <tr>
+                <td>Самара - Стамбул</td>
+                <td><strong>от 11 037₽</strong></td>
+            </tr>
+            <tr>
+                <td>Казань - Стамбул</td>
+                <td><strong>от 2 822₽</strong></td>
+            </tr>
+            <tr>
+                <td>Санкт-Петербург - Стамбул</td>
+                <td><strong>от 23 438₽</strong></td>
+            </tr>
+            <tr>
+                <td>Москва - Анталья</td>
+                <td><strong>от 2 907₽</strong></td>
+            </tr>
+            <tr>
+                <td>Москва - Стамбул</td>
+                <td><strong>от 10 785₽</strong></td>
+            </tr>
+
+            <tr>
+                <td>Минеральные Воды - Анталья</td>
+                <td><strong>от 5 415₽</strong></td>
+            </tr>
+            <tr>
+                <td>Минеральные Воды - Стамбул</td>
+                <td><strong>от 5 945₽</strong></td>
+            </tr>
+        </tbody>
+    </table>    
+
+    <div class="btn-container">
+        <button type="button" class="btn btn-outline-primary" onclick="window.open('https://www.aviasales.ru/countries/turtsiya', '_blank')">Посмотреть рейсы</button>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
