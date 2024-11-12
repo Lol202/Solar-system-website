@@ -1,123 +1,94 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Солнечная система</title>
+    <title>Турция</title>
     <style>
         body {
-            font-family: 'Verdana', sans-serif;
-            background-color: #f0f8ff;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            width: 100%;
-            text-align: center;
-            padding: 20px 0;
+            font-family: Arial, sans-serif;
+            padding: 1cm 2cm; /* Уменьшен верхний отступ до 1см, 2 см от краёв слева и справа */
+            background-color: #f5f5f5; /* Цвет фона для всего тела */
         }
 
         h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        .intro {
-            max-width: 800px;
-            margin: 20px auto;
-            text-align: center;
+            color: #333;
         }
 
         p {
             font-size: 18px;
-            line-height: 1.8;
-            color: #333;
+            line-height: 2; /* Увеличена высота строки для лучшей читаемости */
         }
 
         .content {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
-            margin-top: 0px;
+            margin-top: 20px;
         }
 
-        img.planet {
-            width: 80%;
-            max-width: 500px;
-            border-radius: 15px;
-            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
-            margin-bottom: 20px;
+        img.shadow {
+            width: 100%;
+            max-width: 800px; /* Увеличьте максимальную ширину изображения */
+            height: auto; /* Поддерживает пропорции изображения */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+            margin-right: 20px;
         }
 
-        .text-block {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-            margin: 20px;
-            max-width: 800px;
-        }
-
-        .button {
-            padding: 12px 24px;
+        .text {
             font-size: 18px;
-            background-color: #0066cc;
+            line-height: 2; /* Увеличена высота строки для лучшей читаемости */
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
             color: #fff;
+            background-color: #007bff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
         }
 
-            .button:hover {
-                background-color: #004d99;
-                transform: scale(1.05);
-            }
+        button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        }
 
-        footer {
+        .bottom-text {
             margin-top: 20px;
-            padding: 10px;
-            color: #666;
-            font-size: 16px;
-            text-align: center;
+            font-size: 18px;
+            line-height: 2; /* Увеличена высота строки для лучшей читаемости */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Солнечная система</h1>
-    </header>
-
-    <div class="intro">
+    <h1>Турция</h1>
+    <p>
+        Отдых в Турции - это незабываемые впечатления, красивые пляжи и богатая
+        культура.
+    </p>
+    <div class="content">
+        <img src="turkey.jpg" alt="Отдых в Турции" class="shadow" />
+        <div class="text">
+            <p>
+                Вы можете насладиться историческими достопримечательностями, такими
+                как древний город Эфес, или расслабиться на пляжах Анталии.
+            </p>
+            <button onclick="window.location.href='details.html'">
+                Посмотреть отдых
+            </button>
+        </div>
+    </div>
+    <div class="bottom-text">
         <p>
-            Добро пожаловать в мир Солнечной системы! Наш дом — не просто одна планета, но целая система удивительных миров, каждый из которых уникален и хранит множество тайн.
+            Турция также славится своей кухней, включающей разнообразные блюда,
+            такие как кебабы, мезе и сладости, такие как баклава.
         </p>
     </div>
-
-    <div class="content">
-        <img src="solar-system.webp" alt="Солнечная система" class="planet" />
-
-        <div class="text-block">
-            <p>
-                Исследование Солнечной системы позволяет нам лучше понять наше место во Вселенной. Изучая планеты, спутники и малые тела, мы расширяем наши знания о происхождении и эволюции космоса. Каждый объект, от Солнца до крошечных комет, несет в себе следы процессов, которые формировали космос миллиарды лет назад.
-            </p>
-            <p>
-                Погружение в тайны Солнечной системы вдохновляет нас на открытие новых горизонтов и задает вопросы, на которые мы еще не знаем ответов. Возможно, однажды мы сможем обнаружить жизнь за пределами Земли или найти ресурсы, которые помогут человечеству в будущем. Важность изучения Солнечной системы заключается не только в понимании окружающего мира, но и в стремлении к достижению новых высот.
-            </p>
-        </div>
-
-        <button class="button" onclick="window.location.href='details.html'">
-            Узнать больше
-        </button>
-    </div>
-
-    <footer>
-        <p>Исследуйте космос вместе с нами!</p>
-    </footer>
 </body>
 </html>
